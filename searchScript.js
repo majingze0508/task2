@@ -8,5 +8,8 @@ function craigslistSearch(searchQuery){
   fetch(url)
   .then((response) => {
     return response.json();
+  })
+  .catch((err) => {
+    console.log(err);
   });
 }
